@@ -1,0 +1,11 @@
+services:
+  apache:
+    build: ./apache
+    container_name: ejemplo-server
+    restart: always
+    volumes:
+      - ./proyectos:/var/www/html
+    ports:
+      - "8089:80"
+ 
+
